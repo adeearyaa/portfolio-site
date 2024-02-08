@@ -1,0 +1,345 @@
+body,html {
+    height:100%;
+    width:100%;
+    padding:0;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    color:white;
+    overflow:auto;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-content: center;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.second-part {
+    height:100%
+}
+
+.introduction {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    height:100%
+}
+
+.introduction-text,.introduction-text-two {
+    font-size:40px;
+    font-weight:bold;
+    color:white;
+    text-align:center;
+}
+
+.introduction-text {
+    width: 15ch;
+    animation: typing 2s steps(18), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+
+  .introduction-text-two {
+    width: 23ch;
+    animation: typing 2s steps(29), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+.name-text {
+    color:red;
+}
+
+.scroll-down-button, .project-button {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.project-button:hover,.scroll-down-button:hover {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.scroll-down-button:active {
+  opacity: .5;
+}
+
+.scroll-down-button a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation bar part of the website */
+
+nav {
+    position: sticky;
+    z-index:1000;
+    top: 0;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+
+  .navbar li {
+    float: left;
+  }
+  
+  .navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .navbar li a:hover {
+    background-color: #111;
+  }
+
+  .nav-link.active {
+    /* styles for highlighting active link */
+    background-color: #ffa; /* Example: a yellow background for the active link */
+  }
+
+  /* About me part of the website */
+
+  .about-me-container {
+      min-height:100vh;
+      width:100%;
+  }
+
+  .contact-container {
+      min-height:0.5vh;
+      width:100%;
+  }
+
+  .about-heading, .projects-heading,.experience-heading,.contact-heading {
+      font-size:20px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:30px
+  }
+
+
+  .about-me-content {
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:20px;
+}
+
+.picture-and-intro {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:20px;
+    align-items:center;
+}
+
+.my-picture {
+    border-radius:200px;
+    height:300px;
+    width:auto;
+}
+
+.introductory-message {
+    max-width:400px;
+    padding-left:10px;
+    font-size:20px;
+}
+
+.tech-stack-columns {
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.tech-stack-one,
+.tech-stack-two,
+.tech-stack-three {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+}
+
+.icons {
+    width:75px;
+    height:75px;
+}
+
+.tech-icon {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    height:100px;
+    width:100px;
+}
+
+.projects-container {
+    min-height:200vh;
+    width:100%;
+}
+
+.project-description {
+    max-width:300px;
+}
+
+.projects-list {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    gap:80px;
+    padding:40px;
+}
+
+.project-one, .project-two, .project-three, .project-four {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:40px;
+}
+
+.project-two {
+    gap:80px;
+}
+
+.nus-social-image {
+    height:auto;
+    width:300px;
+    padding-right:320px;
+}
+
+.experience-container {
+    min-height:100vh;
+    width:100%;
+}
+
+.experience-list {
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-main-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px; /* Dark slate gray background */
+    background: #800000; /* Change this to the color of your preference */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #b3b300; /* Solid color bar on the left */
+    color: #f0e6d2;
+}
+
+.experience-container {
+    margin-bottom: 20px;
+}
+
+
+.title {
+    font-style: italic;
+}
+
+.time {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin: 10px 0;
+    list-style: inside square;
+}
+
+.experience-list ul li {
+    margin-bottom: 5px;
+}
+  
+  /* Style for placeholders */
+  ::placeholder {
+    color: #bdc3c7; /* Lighter placeholder text */
+  }
+
+.social-links {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+    padding:30px;
+}
+
+footer {
+    width:100%;
+    min-height:10vh;
+    background-color:#b3b300;
+    color:black;
+}
+
+.social-links img {
+    height:50px;
+    width:auto;
+}
+
+
+
+
