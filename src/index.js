@@ -16,6 +16,7 @@ import webpack from "./images/webpack.png"
 import weatherApp from "./images/weatherwhisper.gif"
 import tictactoe from "./images/tictactoe.gif"
 import taskplanner from "./images/taskplanner.gif"
+import connectify from "./images/connectify.gif"
 import nusocial from "./images/nusocial.png"
 import github from "./images/github.svg"
 import linkedin from "./images/linkedin.png"
@@ -72,8 +73,9 @@ taskPlannerImage.src= taskplanner
 let ticTacToeImage = document.querySelector(".tic-tac-toe-image");
 ticTacToeImage.src= tictactoe
 
-let nusocialImage = document.querySelector(".nus-social-image");
-nusocialImage.src= nusocial
+let connectifyImage = document.querySelector(".connectify-image");
+console.log(connectify);
+connectifyImage.src= connectify
 
 let githubImage = document.querySelector(".github-image");
 githubImage.src= github

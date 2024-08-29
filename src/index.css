@@ -11,6 +11,11 @@ body,html {
     scroll-behavior: smooth;
 }
 
+img {
+    width: 690px;
+    height: 380px;
+}
+
 .main-container {
     display:flex;
     flex-direction:column;
